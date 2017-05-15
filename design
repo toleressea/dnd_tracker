@@ -1,0 +1,49 @@
+wants
+    turn order
+    track attacks
+        source
+        target
+        type
+        attack roll
+        result
+        damage total
+    track combatant status
+        characters (all known values)
+            hp
+            state
+            position?
+        enemies (unknown values)
+            damage taken
+            state
+            highest miss attack roll
+            lowest hit attack roll
+    statistics
+        stats to display
+            attack count
+            hit percentage
+            damage total
+        per combat
+        per campaign
+
+database model
+    stats
+        campaigns
+            campaign id (unique)
+        players
+            name (player id, unique)
+            campaign id
+        fights
+            fight id (unique)
+            campaign id
+        combatants
+            combatant id (unique)
+            fight id
+            name
+            player (bool)
+            order number
+            hp
+            damage taken
+            state
+            position
+            highest miss attack roll
+            lowest hit attack roll
