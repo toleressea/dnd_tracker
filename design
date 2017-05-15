@@ -29,13 +29,10 @@ database model
     stats
         campaigns
             campaign id (unique)
-        players
-            name (player id, unique)
-            campaign id
         fights
             fight id (unique)
             campaign id
-        combatants
+        characters
             combatant id (unique)
             fight id
             name
